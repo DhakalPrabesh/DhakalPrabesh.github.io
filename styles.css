@@ -222,6 +222,7 @@ input, textarea {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    padding-right: 10%;
 }
 
 button {
@@ -318,4 +319,10 @@ button {
 
 button:hover {
     background-color: #0056b3; /* Darker shade on hover */
+}
+.save{
+  float: left;
+  font-size: medium;
+  margin-left: 10px;
+
 }
