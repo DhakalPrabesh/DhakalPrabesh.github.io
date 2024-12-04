@@ -324,5 +324,7 @@ button:hover {
   float: left;
   font-size: medium;
   margin-left: 10px;
+  margin-top: 10px;
+  color: #28a745;
 
 }
