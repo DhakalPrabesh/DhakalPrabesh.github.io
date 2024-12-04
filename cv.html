@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>履歴書</title>
+</head>
+<header>
+    <h1>ポートフォリオ</h1>
+   
+    <nav>
+        <ul>
+            <li>
+                <a href="about.html">自己紹介</a>
+            </li>
+            <li>
+                <a href="index.html">ポートフォリオ</a>
+            </li>
+            <li>
+                <a href="contact.html">お問い合わせ</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #f4f4f4;
+    }
+    
+    .cv-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 210mm; /* A4 width */
+        margin: auto;
+    }
+    
+    .cv-page {
+        background: white;
+        padding: 20px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    h1 {
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    
+    h2 {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    
+    .personal-info label {
+        display: block;
+        margin: 10px 0 5px;
+    }
+    
+    .personal-info input {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    
+    .education table,
+    .experience table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+    }
+    
+    .education th,
+    .experience th {
+        background: #007BFF;
+        color: white;
+        padding: 10px;
+    }
+    
+    .education td,
+    .experience td {
+        border: 1px solid #ccc;
+        padding: 8px;
+    }
+    
+    .skills ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    .skills li {
+        margin: 5px 0;
+    }
+    
+    .additional-info textarea {
+        width: 100%;
+        height: 100px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    } 
+</style>
+<body>
+    <div class="cv-container">
+        <div class="cv-page">
+            <h1>履歴書</h1>
+            <div class="personal-info">
+                <label>氏名:</label>
+                <input type="text" placeholder="名前を入力">
+                <label>メールアドレス:</label>
+                <input type="email" placeholder="メールアドレスを入力">
+                <label>電話番号:</label>
+                <input type="tel" placeholder="電話番号を入力">
+            </div>
+            <div class="education">
+                <h2>学歴</h2>
+                <table>
+                    <tr>
+                        <th>年</th>
+                        <th>学校名</th>
+                        <th>学位</th>
+                    </tr>
+                    <tr>
+                        <td>20XX</td>
+                        <td>学校名</td>
+                        <td>学位</td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </table>
+            </div>
+            <div class="experience">
+                <h2>職歴</h2>
+                <table>
+                    <tr>
+                        <th>年</th>
+                        <th>会社名</th>
+                        <th>役職</th>
+                    </tr>
+                    <tr>
+                        <td>20XX</td>
+                        <td>会社名</td>
+                        <td>役職</td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </table>
+            </div>
+        </div>
+
+        <div class="cv-page">
+            <h1>履歴書</h1>
+            <div class="skills">
+                <h2>スキル</h2>
+                <ul>
+                    <li>スキル1</li>
+                    <li>スキル2</li>
+                    <li>スキル3</li>
+                    <!-- Add more skills as needed -->
+                </ul>
+            </div>
+            <div class="additional-info">
+                <h2>その他の情報</h2>
+                <textarea placeholder="その他の情報を入力"></textarea>
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+    <p>&copy; 2023 <a href="https://github.com/DhakalPrabesh"> Prabesh Dhakal</a>. All rights reserved. </p><a href="login.html">ログアウト</a>
+</footer>
+</footer>
+</html> 

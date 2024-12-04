@@ -1,0 +1,321 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0%;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+header {
+    background:linear-gradient(blue,orange);opacity:80%; /* Light background color for header */
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background:linear-gradient(blue,orange);opacity:80%; /* Light background color for footer */
+    padding: 10px;
+    text-align: center;
+    color: #f4f4f4;
+    margin-top: auto;
+    position: sticky;
+    bottom: 0%; 
+    width: 100%;/* Pushes the footer to the bottom of the page */
+}
+
+main {
+    flex: 1; /* Allows the main content to grow and fill the available space */
+    padding: 20px;
+}
+h1{
+    text-align: center;
+    font-size: 40px;
+    color: #ffffff;
+}
+
+h2{
+    font-size: 24px;
+    font-weight: bold;
+    color: #020af6;
+    padding-left: 1%;
+}
+p{
+    font-size: 18px;
+    padding-left: 1%;
+}
+nav ul {
+    list-style:upper-alpha;
+    padding: 0;
+}
+
+nav ul li {
+    display:inline-block;
+    margin: 0 15px;
+}
+
+.self-intro {
+    font-family: 'Arial', sans-serif; /* Use a clean and readable font */
+    line-height: 1.8; /* Better line spacing for readability */
+    font-size: 16px; /* Set a comfortable font size */
+    color: #333; /* Neutral dark color for text */
+    max-width: 100%; /* Limit the width for a better reading experience */
+    margin-left: 0 auto; /* Center align the content */
+    padding: 10px;
+  }
+  
+  .self-intro h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #111; /* Slightly darker heading color */
+  }
+  
+  .self-intro p {
+    margin-bottom: 15px; /* Spacing between paragraphs */
+  }
+  
+  .self-intro ul {
+    padding-left: 20px; /* Indent the bullet points */
+    margin-bottom: 15px;
+  }
+  
+  .self-intro ul li {
+    margin-bottom: 10px; /* Add space between list items */
+  }
+  
+  .self-intro ul li::marker {
+    color: #111; /* Change the bullet color if desired */
+  }
+  .profile-image {
+    float: right; /* Float the image to the right */
+    max-width: 500px; /* Limit the image width */
+   
+    margin-right: 1%; /* Add spacing between text and image */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .self-pr-container {
+    display: flex; /* Places text and image side by side */
+    align-items: flex-start; /* Align items to the top */
+    justify-content: space-between; /* Add space between the text and image */
+    gap: 20px; /* Adds space between text and image */
+    margin: 20px; /* Outer spacing for the container */
+  }
+  
+  .text-section {
+    width: 70%; /* Allocates 70% width for the text */
+    line-height: 1.6; /* Improves readability */
+    font-family: Arial, sans-serif;
+  }
+  
+  .text-section h2 {
+    font-size: 1.8rem; /* Larger font size for the heading */
+    margin-bottom: 10px; /* Adds space below the heading */
+  }
+  
+  .text-section ul {
+    padding-left: 20px; /* Adds left padding for bullets */
+    margin: 10px 0;
+  }
+  
+  .text-section ul li {
+    margin-bottom: 8px; /* Adds spacing between list items */
+  }
+  
+  .image-section {
+    width: 25%; /* Allocates 25% width for the image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-section img {
+    max-width: 100%; /* Ensures the image doesn't exceed its container */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 8px; /* Optional: Adds rounded corners */
+  }
+  
+
+  /* Overall Section Styling */
+.contact-section {
+    background-color: #f9f9f9; /* Light gray background */
+    padding: 40px 20px; /* Add spacing */
+    max-width: 800px; /* Set width limit for center alignment */
+    margin: 20px auto; /* Center horizontally */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  /* Header Styling */
+  .contact-header h2 {
+    color: #0066ff; /* Vibrant blue for the heading */
+    font-size: 2rem; /* Larger font size */
+    margin-bottom: 10px;
+    text-align: center; /* Center align heading */
+  }
+  
+  .contact-header p {
+    font-size: 1rem;
+    line-height: 1.6; /* Improve text readability */
+    margin-bottom: 30px;
+    color: #333; /* Neutral text color */
+    text-align: center; /* Center align text */
+  }
+  
+  /* Form Styling */
+  .contact-form {
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+    gap: 15px; /* Add space between inputs */
+  }
+  
+  .contact-form label {
+    font-weight: bold;
+    color: #444; /* Darker gray for labels */
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1rem;
+    width: 100%; /* Full-width inputs */
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    border-color: #0066ff; /* Blue border on focus */
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 102, 255, 0.5); /* Subtle glow effect */
+  }
+  
+  .contact-form button {
+    padding: 10px;
+    background-color: #28a745; /* Green background */
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color: #218838; /* Darker green on hover */
+  }
+  
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+
+
+.education table,
+.experience table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.education th,
+.experience th {
+    background: #007BFF;
+    color: white;
+    padding: 10px;
+}
+
+.education td,
+.experience td {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+.skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+.skills li {
+    margin: 5px 0;
+}
+
+
+.login-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background: rgba(6, 251, 255, 0.1); /* Semi-transparent background */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(236, 1, 1, 0.613);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding-right: 0%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 50%;
+    padding: 10px;
+    padding-right: 0%;
+    background-color: #ff6f00; /* Primary color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
