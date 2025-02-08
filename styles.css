@@ -1,330 +1,566 @@
+/* Global Styles */
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0%;
-    background-color: #f4f4f4;
-    color: #333;
+  font-family: 'Arial', sans-serif; /* Clean font */
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #e0eafc, #cfdef3); /* Soft gradient background */
+  color: #333; /* Dark text for readability */
+  overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
-
+/* Header Styling */
 header {
-    background:linear-gradient(blue,orange);opacity:80%; /* Light background color for header */
-    padding: 10px;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background: rgba(47, 199, 220, 0.9); /* Semi-transparent header */
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 10; /* Ensure header is above other elements */
 }
 
-footer {
-    background:linear-gradient(blue,orange);opacity:80%; /* Light background color for footer */
-    padding: 10px;
-    text-align: center;
-    color: #f4f4f4;
-    margin-top: auto;
-    position: sticky;
-    bottom: 0%; 
-    width: 100%;/* Pushes the footer to the bottom of the page */
+header h1 {
+  color: #fff; /* White text for header */
+  font-size: 3rem; /* Larger font size */
+  text-transform: uppercase; /* Uppercase for a modern look */
+  letter-spacing: 2px; /* Spacing between letters */
 }
 
-main {
-    flex: 1; /* Allows the main content to grow and fill the available space */
-    padding: 20px;
-}
-h1{
-    text-align: center;
-    font-size: 40px;
-    color: #ffffff;
-}
-
-h2{
-    font-size: 24px;
-    font-weight: bold;
-    color: #020af6;
-    padding-left: 1%;
-}
-p{
-    font-size: 18px;
-    padding-left: 1%;
-}
+/* Navigation Styling */
 nav ul {
-    list-style:upper-alpha;
-    padding: 0;
+  list-style: none; /* Remove default list styling */
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Center navigation items */
+  margin-top: 10px; /* Space above navigation */
 }
 
 nav ul li {
-    display:inline-block;
-    margin: 0 15px;
+  margin: 0 20px; /* Space between nav items */
 }
 
-.self-intro {
-    font-family: 'Arial', sans-serif; /* Use a clean and readable font */
-    line-height: 1.8; /* Better line spacing for readability */
-    font-size: 16px; /* Set a comfortable font size */
-    color: #333; /* Neutral dark color for text */
-    max-width: 100%; /* Limit the width for a better reading experience */
-    margin-left: 0 auto; /* Center align the content */
-    padding: 10px;
-  }
-  
-  .self-intro h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: #111; /* Slightly darker heading color */
-  }
-  
-  .self-intro p {
-    margin-bottom: 15px; /* Spacing between paragraphs */
-  }
-  
-  .self-intro ul {
-    padding-left: 20px; /* Indent the bullet points */
-    margin-bottom: 15px;
-  }
-  
-  .self-intro ul li {
-    margin-bottom: 10px; /* Add space between list items */
-  }
-  
-  .self-intro ul li::marker {
-    color: #111; /* Change the bullet color if desired */
-  }
-  .profile-image {
-    float: right; /* Float the image to the right */
-    max-width: 500px; /* Limit the image width */
-   
-    margin-right: 1%; /* Add spacing between text and image */
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .self-pr-container {
-    display: flex; /* Places text and image side by side */
-    align-items: flex-start; /* Align items to the top */
-    justify-content: space-between; /* Add space between the text and image */
-    gap: 20px; /* Adds space between text and image */
-    margin: 20px; /* Outer spacing for the container */
-  }
-  
-  .text-section {
-    width: 70%; /* Allocates 70% width for the text */
-    line-height: 1.6; /* Improves readability */
-    font-family: Arial, sans-serif;
-  }
-  
-  .text-section h2 {
-    font-size: 1.8rem; /* Larger font size for the heading */
-    margin-bottom: 10px; /* Adds space below the heading */
-  }
-  
-  .text-section ul {
-    padding-left: 20px; /* Adds left padding for bullets */
-    margin: 10px 0;
-  }
-  
-  .text-section ul li {
-    margin-bottom: 8px; /* Adds spacing between list items */
-  }
-  
-  .image-section {
-    width: 25%; /* Allocates 25% width for the image */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .image-section img {
-    max-width: 100%; /* Ensures the image doesn't exceed its container */
-    height: auto; /* Maintains aspect ratio */
-    border-radius: 8px; /* Optional: Adds rounded corners */
-  }
-  
-
-  /* Overall Section Styling */
-.contact-section {
-    background-color: #f9f9f9; /* Light gray background */
-    padding: 40px 20px; /* Add spacing */
-    max-width: 800px; /* Set width limit for center alignment */
-    margin: 20px auto; /* Center horizontally */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  }
-  
-  /* Header Styling */
-  .contact-header h2 {
-    color: #0066ff; /* Vibrant blue for the heading */
-    font-size: 2rem; /* Larger font size */
-    margin-bottom: 10px;
-    text-align: center; /* Center align heading */
-  }
-  
-  .contact-header p {
-    font-size: 1rem;
-    line-height: 1.6; /* Improve text readability */
-    margin-bottom: 30px;
-    color: #333; /* Neutral text color */
-    text-align: center; /* Center align text */
-  }
-  
-  /* Form Styling */
-  .contact-form {
-    display: flex;
-    flex-direction: column; /* Stack form elements vertically */
-    gap: 15px; /* Add space between inputs */
-  }
-  
-  .contact-form label {
-    font-weight: bold;
-    color: #444; /* Darker gray for labels */
-  }
-  
-  .contact-form input,
-  .contact-form textarea {
-    padding: 10px;
-    border: 1px solid #ccc; /* Light gray border */
-    border-radius: 5px; /* Rounded corners */
-    font-size: 1rem;
-    width: 100%; /* Full-width inputs */
-  }
-  
-  .contact-form input:focus,
-  .contact-form textarea:focus {
-    border-color: #0066ff; /* Blue border on focus */
-    outline: none;
-    box-shadow: 0 0 5px rgba(0, 102, 255, 0.5); /* Subtle glow effect */
-  }
-  
-  .contact-form button {
-    padding: 10px;
-    background-color: #28a745; /* Green background */
-    color: #fff; /* White text */
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .contact-form button:hover {
-    background-color: #218838; /* Darker green on hover */
-  }
-  
-form {
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    margin: 0 auto;
+nav ul li a {
+  color: #fff; /* White color for links */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Bold links */
+  transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition */
 }
 
-label {
-    margin: 10px 0 5px;
+nav ul li a:hover {
+  color: #ffcc00; /* Change color on hover */
+  transform: translateY(-3px); /* Lift effect on hover */
 }
 
-input, textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding-right: 10%;
+/* Main Content Styling */
+main {
+  padding: 40px 20px; /* Padding for main content */
+  max-width: 1200px; /* Max width for content */
+  margin: auto; /* Center content */
 }
 
+/* Section Styling */
+section {
+  background: #fff; /* White background for sections */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2); /* Deeper shadow for 3D effect */
+  margin-bottom: 30px; /* Space between sections */
+  padding: 20px; /* Padding inside sections */
+  position: relative; /* For pseudo-elements */
+  overflow: hidden; /* Hide overflow for pseudo-elements */
+}
+
+/* Pseudo-element for 3D effect */
+section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.1); /* Light overlay */
+  border-radius: 15px; /* Match section border radius */
+  transform: translateZ(-1px) scale(1.1); /* 3D effect */
+  z-index: 0; /* Behind the content */
+}
+
+/* Heading Styles */
+h2 {
+  color: #cdbcdd; /* Bright color for section headings */
+  font-size: 2.5rem; /* Larger font size for headings */
+  margin-bottom: 15px; /* Space below headings */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+/* Paragraph Styles */
+p {
+  line-height: 1.8; /* Improved line spacing */
+  margin-bottom: 15px; /* Space below paragraphs */
+}
+
+/* Button Styling */
 button {
-    margin-top: 10px;
-    padding: 10px;
-    background-color: #28a745;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+  background: linear-gradient(45deg, #4a90e2, #007bff); /* Gradient button */
+  color: #fff; /* White text */
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px 20px; /* Padding for buttons */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background 0.3s ease, transform 0.2s ease; /* Smooth background transition */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Shadow for depth */
 }
 
 button:hover {
-    background-color: #218838;
+  transform: translateY(-3px); /* Lift effect on hover */
+}
+
+/* Footer Styling */
+footer {
+  background: rgba(4, 121, 150, 0.9); /* Semi-transparent dark footer */
+  color: #fff; /* White text */
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design Adjustments */
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  nav ul {
+      flex-direction: column; /* Stack navigation items vertically */
+  }
+
+  nav ul li {
+      margin: 10px 0; /* Space between nav items */
+  }
+
+  h1 {
+      font-size: 2.5rem; /* Adjust heading size for mobile */
+  }
+
+  h2 {
+      font-size: 2rem; /* Adjust subheading size for mobile */
+  }
+}
+
+/* Tablet Styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+  h1 {
+      font-size: 3rem; /* Adjust heading size for tablet */
+  }
+
+  h2 {
+      font-size: 2.2rem; /* Adjust subheading size for tablet */
+  }
+}
+
+/* Animation for h1 text */
+@keyframes fadeIn {
+  from {
+      opacity: 0; /* Start fully transparent */
+      transform: translateY(-20px); /* Start slightly above */
+  }
+  to {
+      opacity: 1; /* End fully opaque */
+      transform: translateY(0); /* End in original position */
+  }
+}
+
+h1 {
+  animation: fadeIn 1s ease-in-out; /* Apply animation */
+  text-align: center;
+  font-size: 40px;
+  color: #ffffff;
+}
+
+h2{
+  font-size: 24px;
+  font-weight: bold;
+  color: #020af6;
+  padding-left: 1%;
+}
+p{
+  font-size: 18px;
+  padding-left: 1%;
+}
+
+.self-intro {
+  font-family: 'Arial', sans-serif; /* Use a clean and readable font */
+  line-height: 1.8; /* Better line spacing for readability */
+  font-size: 16px; /* Set a comfortable font size */
+  color: #333; /* Neutral dark color for text */
+  max-width: 100%; /* Limit the width for a better reading experience */
+  margin-left: 0 auto; /* Center align the content */
+  padding: 10px;
+}
+
+.self-intro h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #111; /* Slightly darker heading color */
+}
+
+.self-intro p {
+  margin-bottom: 15px; /* Spacing between paragraphs */
+}
+
+.self-intro ul {
+  padding-left: 20px; /* Indent the bullet points */
+  margin-bottom: 15px;
+}
+
+.self-intro ul li {
+  margin-bottom: 10px; /* Add space between list items */
+}
+
+.self-intro ul li::marker {
+  color: #111; /* Change the bullet color if desired */
+}
+.profile-image {
+  float: right; /* Float the image to the right */
+  max-width: 500px; /* Limit the image width */
+ 
+  margin-right: 1%; /* Add spacing between text and image */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.self-pr-container {
+  display: flex; /* Places text and image side by side */
+  align-items: flex-start; /* Align items to the top */
+  justify-content: space-between; /* Add space between the text and image */
+  gap: 20px; /* Adds space between text and image */
+  margin: 30px 0; /* Increased margin for better spacing */
+}
+
+.text-section {
+  width: 70%; /* Allocates 70% width for the text */
+  line-height: 1.8; /* Improved readability */
+  font-family: Arial, sans-serif;
+}
+
+.text-section h2 {
+  font-size: 1.8rem; /* Larger font size for the heading */
+  margin-bottom: 10px; /* Adds space below the heading */
+}
+
+.text-section ul {
+  padding-left: 20px; /* Adds left padding for bullets */
+  margin: 10px 0;
+}
+
+.text-section ul li {
+  margin-bottom: 8px; /* Adds spacing between list items */
+}
+
+.image-section {
+  width: 25%; /* Allocates 25% width for the image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-section img {
+  max-width: 100%; /* Ensures the image doesn't exceed its container */
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 8px; /* Optional: Adds rounded corners */
+}
+
+
+/* Overall Section Styling */
+.contact-section {
+  background-color: #f0f4f8; /* Light background for contrast */
+  padding: 40px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* More pronounced shadow */
+  max-width: 800px; /* Set width limit for center alignment */
+  margin: 20px auto; /* Center horizontally */
+}
+
+/* Header Styling */
+.contact-header h2 {
+  color: #0066ff; /* Vibrant blue for the heading */
+  font-size: 2rem; /* Larger font size */
+  margin-bottom: 10px;
+  text-align: center; /* Center align heading */
+  text-transform: uppercase; /* Uppercase for a modern look */
+}
+
+.contact-header p {
+  font-size: 1rem;
+  line-height: 1.6; /* Improve text readability */
+  margin-bottom: 30px;
+  color: #333; /* Neutral text color */
+  text-align: center; /* Center align text */
+}
+
+/* Form Container */
+.contact-form-container {
+  background: #ffffff; /* White background for the form */
+  padding: 30px; /* Add padding inside the form */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* More pronounced shadow */
+}
+
+/* Form Styling */
+.contact-form {
+  display: flex;
+  flex-direction: column; /* Stack form elements vertically */
+  gap: 15px; /* Add space between inputs */
+}
+
+/* Input Group Styling */
+.input-group {
+  position: relative; /* Position relative for absolute icon placement */
+  display: flex;
+  align-items: center; /* Center align items vertically */
+  gap: 10px; /* Space between icon and label */
+}
+
+.input-group i {
+  color: #007bff; /* Icon color */
+  font-size: 1.5rem; /* Icon size */
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Input and Textarea Styling */
+.contact-form input,
+.contact-form textarea {
+  padding: 15px; /* Increased padding for inputs */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 100%; /* Full-width inputs */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth border transition */
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #007bff; /* Blue border on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Subtle glow effect */
+}
+
+/* Button Styling */
+.contact-form button {
+  padding: 15px; /* Increased padding for buttons */
+  background-color: #007bff; /* Blue background for buttons */
+  color: #fff; /* White text */
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Added transform for hover effect */
+}
+
+.contact-form button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Icon Animation on Hover */
+.input-group:hover i {
+  transform: scale(1.2); /* Enlarge icon on hover */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+label {
+  margin: 10px 0 5px;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
 }
 
 
 
 .education table,
 .experience table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  border: 1px solid #ddd; /* Light border for tables */
 }
 
 .education th,
 .experience th {
-    background: #007BFF;
-    color: white;
-    padding: 10px;
+  background: #007bff; /* Blue header for tables */
+  color: white;
+  padding: 10px;
 }
 
 .education td,
 .experience td {
-    border: 1px solid #ccc;
-    padding: 8px;
+  border: 1px solid #ccc;
+  padding: 8px;
 }
 
 .skills ul {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 .skills li {
-    margin: 5px 0;
+  margin: 5px 0;
 }
 
 
 .login-container {
-    max-width: 400px;
-    margin: 100px auto;
-    padding: 20px;
-    background: rgba(6, 251, 255, 0.1); /* Semi-transparent background */
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(236, 1, 1, 0.613);
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 20px;
+  background: rgba(6, 251, 255, 0.1); /* Semi-transparent background */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(236, 1, 1, 0.613);
 }
 
 h1 {
-    text-align: center;
-    margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .form-group {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 label {
-    display: block;
-    margin-bottom: 5px;
+  display: block;
+  margin-bottom: 5px;
 }
 
 input[type="email"],
 input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding-right: 0%;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding-right: 0%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
 button {
-    width: 50%;
-    padding: 10px;
-    padding-right: 0%;
-    background-color: #ff6f00; /* Primary color */
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+  width: 50%;
+  padding: 10px;
+  padding-right: 0%;
+  background-color: #ff6f00; /* Primary color */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: #0056b3; /* Darker shade on hover */
+  background-color: #0056b3; /* Darker shade on hover */
 }
-.save {
-  float: left;
-  font-size: medium;
-  margin-left: 10px;
-  margin-top: 10px;
-  color: #28a745;
 
+/* Link Styling */
+nav ul li a {
+  color: #007bff; /* Blue color for links */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+nav ul li a:hover {
+  color: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive Design Adjustments */
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .self-pr-container {
+      flex-direction: column; /* Stack text and image vertically */
+      align-items: center; /* Center align items */
+  }
+
+  .text-section {
+      width: 100%; /* Full width for text section */
+  }
+
+  .image-section {
+      width: 100%; /* Full width for image section */
+      margin-bottom: 20px; /* Add space below image */
+  }
+
+  .profile-image {
+      max-width: 100%; /* Ensure image fits within container */
+      margin: 0 auto; /* Center align image */
+  }
+
+  .contact-form-container {
+      padding: 20px; /* Reduce padding for form */
+  }
+
+  .contact-section {
+      padding: 20px; /* Reduce padding for smaller screens */
+  }
+
+  h1 {
+      font-size: 30px; /* Adjust heading size for mobile */
+  }
+
+  h2 {
+      font-size: 20px; /* Adjust subheading size for mobile */
+  }
+
+  p {
+      font-size: 16px; /* Adjust paragraph size for mobile */
+  }
+
+  nav ul {
+      flex-direction: column; /* Stack navigation items vertically */
+  }
+
+  nav ul li {
+      margin: 10px 0; /* Add space between nav items */
+  }
+}
+
+/* Tablet Styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .self-pr-container {
+      flex-direction: row; /* Keep text and image side by side */
+  }
+
+  .text-section {
+      width: 60%; /* Adjust width for tablet */
+  }
+
+  .image-section {
+      width: 40%; /* Adjust width for tablet */
+  }
+
+  .contact-section {
+      padding: 30px; /* Adjust padding for tablet */
+  }
+
+  h1 {
+      font-size: 35px; /* Adjust heading size for tablet */
+  }
+
+  h2 {
+      font-size: 22px; /* Adjust subheading size for tablet */
+  }
 }
