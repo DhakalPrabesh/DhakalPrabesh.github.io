@@ -268,37 +268,40 @@ p{
 
 /* Overall Section Styling */
 .contact-section {
-  background-color: #f0f4f8; /* Light background for contrast */
+  background-color: #ffffff; /* White background for the contact section */
   padding: 40px 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* More pronounced shadow */
+  border-radius: 15px; /* More rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
   max-width: 800px; /* Set width limit for center alignment */
   margin: 20px auto; /* Center horizontally */
+  position: relative; /* For pseudo-elements */
 }
 
 /* Header Styling */
-.contact-header h2 {
-  color: #0066ff; /* Vibrant blue for the heading */
-  font-size: 2rem; /* Larger font size */
-  margin-bottom: 10px;
+.contact-header {
   text-align: center; /* Center align heading */
+  margin-bottom: 30px; /* Space below header */
+}
+
+.contact-header h2 {
+  color: #007bff; /* Vibrant blue for the heading */
+  font-size: 2.5rem; /* Larger font size */
+  margin-bottom: 10px;
   text-transform: uppercase; /* Uppercase for a modern look */
 }
 
 .contact-header p {
-  font-size: 1rem;
-  line-height: 1.6; /* Improve text readability */
-  margin-bottom: 30px;
-  color: #333; /* Neutral text color */
-  text-align: center; /* Center align text */
+  font-size: 1.1rem; /* Slightly larger font for readability */
+  line-height: 1.6; /* Improved line spacing */
 }
 
 /* Form Container */
 .contact-form-container {
-  background: #ffffff; /* White background for the form */
+  background: #f9f9f9; /* Light background for the form */
   padding: 30px; /* Add padding inside the form */
   border-radius: 10px; /* Rounded corners */
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* More pronounced shadow */
+  width: 100%; /* Full width for the form */
 }
 
 /* Form Styling */
@@ -308,26 +311,12 @@ p{
   gap: 15px; /* Add space between inputs */
 }
 
-/* Input Group Styling */
-.input-group {
-  position: relative; /* Position relative for absolute icon placement */
-  display: flex;
-  align-items: center; /* Center align items vertically */
-  gap: 10px; /* Space between icon and label */
-}
-
-.input-group i {
-  color: #007bff; /* Icon color */
-  font-size: 1.5rem; /* Icon size */
-  transition: transform 0.3s ease; /* Smooth transition for hover effect */
-}
-
 /* Input and Textarea Styling */
 .contact-form input,
 .contact-form textarea {
   padding: 15px; /* Increased padding for inputs */
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 8px; /* More rounded corners */
   font-size: 1rem;
   width: 100%; /* Full-width inputs */
   transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth border transition */
@@ -342,57 +331,41 @@ p{
 /* Button Styling */
 .contact-form button {
   padding: 15px; /* Increased padding for buttons */
-  background-color: #007bff; /* Blue background for buttons */
+  background: linear-gradient(45deg, #007bff, #0056b3); /* Gradient background */
   color: #fff; /* White text */
   border: none;
-  border-radius: 5px;
+  border-radius: 8px; /* More rounded corners */
   font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease; /* Added transform for hover effect */
 }
 
 .contact-form button:hover {
-  background-color: #0056b3; /* Darker blue on hover */
+  background: linear-gradient(45deg, #0056b3, #004494); /* Darker gradient on hover */
   transform: scale(1.05); /* Slightly enlarge button on hover */
 }
 
-/* Icon Animation on Hover */
-.input-group:hover i {
-  transform: scale(1.2); /* Enlarge icon on hover */
+/* Image Styling */
+.contact-image {
+  border-radius: 10px; /* Rounded corners */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 400px; /* Set a maximum height */
+  width: 100%; /* Full width for responsiveness */
+  object-fit: cover; /* Cover the area without distortion */
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  max-width: 400px;
-  margin: 0 auto;
+/* Section Divider */
+.section-divider {
+  height: 2px;
+  background-color: #007bff; /* Blue divider */
+  margin: 20px 0; /* Space around divider */
 }
 
-label {
-  margin: 10px 0 5px;
+/* Icon Styling */
+.form-icon {
+  margin-right: 10px; /* Space between icon and label */
+  color: #007bff; /* Icon color */
 }
-
-input, textarea {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-button {
-  margin-top: 10px;
-  padding: 10px;
-  background-color: #28a745;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #218838;
-}
-
-
 
 .education table,
 .experience table {
@@ -536,6 +509,10 @@ nav ul li a:hover {
   nav ul li {
       margin: 10px 0; /* Add space between nav items */
   }
+
+  .contact-section .row {
+    flex-direction: column; /* Stack elements vertically on small screens */
+  }
 }
 
 /* Tablet Styles */
@@ -563,4 +540,21 @@ nav ul li a:hover {
   h2 {
       font-size: 22px; /* Adjust subheading size for tablet */
   }
+}
+
+/* Additional styles for contact section */
+.contact-section .row {
+    margin-top: 20px; /* Space between header and form */
+}
+
+.contact-form-container {
+    margin-bottom: 20px; /* Space below the form */
+}
+
+.contact-image {
+    border-radius: 10px; /* Rounded corners */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 400px; /* Set a maximum height */
+    width: 100%; /* Full width for responsiveness */
+    object-fit: cover; /* Cover the area without distortion */
 }
