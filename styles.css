@@ -8,9 +8,43 @@ body {
   overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
+/* Perspective for 3D Effect */
+.container {
+  perspective: 1000px; /* Perspective for 3D effect */
+}
+
+/* Box Format for Sections */
+.section-box {
+  background: #ffffff; /* White background for boxes */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  padding: 20px; /* Padding inside boxes */
+  margin: 20px 0; /* Space between boxes */
+  transition: transform 0.3s ease; /* Smooth transform transition */
+  transform-style: preserve-3d; /* Preserve 3D transformations */
+  animation: float 3s ease-in-out infinite; /* Apply floating animation */
+}
+
+/* Floating Effect */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0); /* Start and end at original position */
+  }
+  50% {
+    transform: translateY(-10px); /* Move up by 10px */
+  }
+}
+
+/* Hover Effect for Boxes */
+.section-box:hover {
+  transform: rotateY(10deg) translateY(-5px); /* 3D lift effect on hover */
+}
+
 /* Header Styling */
 header {
-  background: rgba(47, 199, 220, 0.9); /* Semi-transparent header */
+  background: rgba(47, 70, 220, 0.9); /* Semi-transparent dark header */
+  background-image: url("DhakalPrabesh.github.io/abc.avif");
+  opacity: 90%; /* Semi-transparent header with image */
   padding: 20px;
   text-align: center;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
@@ -39,15 +73,14 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #fff; /* White color for links */
+  color: white; /* Change link color to white */
   text-decoration: none; /* Remove underline */
   font-weight: bold; /* Bold links */
-  transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition */
+  transition: color 0.3s ease; /* Smooth color transition */
 }
 
 nav ul li a:hover {
   color: #ffcc00; /* Change color on hover */
-  transform: translateY(-3px); /* Lift effect on hover */
 }
 
 /* Main Content Styling */
@@ -126,42 +159,42 @@ footer {
 /* Mobile Styles */
 @media (max-width: 768px) {
   nav ul {
-      flex-direction: column; /* Stack navigation items vertically */
+    flex-direction: column; /* Stack navigation items vertically */
   }
 
   nav ul li {
-      margin: 10px 0; /* Space between nav items */
+    margin: 10px 0; /* Space between nav items */
   }
 
   h1 {
-      font-size: 2.5rem; /* Adjust heading size for mobile */
+    font-size: 2.5rem; /* Adjust heading size for mobile */
   }
 
   h2 {
-      font-size: 2rem; /* Adjust subheading size for mobile */
+    font-size: 2rem; /* Adjust subheading size for mobile */
   }
 }
 
 /* Tablet Styles */
 @media (min-width: 769px) and (max-width: 1024px) {
   h1 {
-      font-size: 3rem; /* Adjust heading size for tablet */
+    font-size: 3rem; /* Adjust heading size for tablet */
   }
 
   h2 {
-      font-size: 2.2rem; /* Adjust subheading size for tablet */
+    font-size: 2.2rem; /* Adjust subheading size for tablet */
   }
 }
 
 /* Animation for h1 text */
 @keyframes fadeIn {
   from {
-      opacity: 0; /* Start fully transparent */
-      transform: translateY(-20px); /* Start slightly above */
+    opacity: 0; /* Start fully transparent */
+    transform: translateY(-20px); /* Start slightly above */
   }
   to {
-      opacity: 1; /* End fully opaque */
-      transform: translateY(0); /* End in original position */
+    opacity: 1; /* End fully opaque */
+    transform: translateY(0); /* End in original position */
   }
 }
 
@@ -464,50 +497,50 @@ nav ul li a:hover {
 /* Mobile Styles */
 @media (max-width: 768px) {
   .self-pr-container {
-      flex-direction: column; /* Stack text and image vertically */
-      align-items: center; /* Center align items */
+    flex-direction: column; /* Stack text and image vertically */
+    align-items: center; /* Center align items */
   }
 
   .text-section {
-      width: 100%; /* Full width for text section */
+    width: 100%; /* Full width for text section */
   }
 
   .image-section {
-      width: 100%; /* Full width for image section */
-      margin-bottom: 20px; /* Add space below image */
+    width: 100%; /* Full width for image section */
+    margin-bottom: 20px; /* Add space below image */
   }
 
   .profile-image {
-      max-width: 100%; /* Ensure image fits within container */
-      margin: 0 auto; /* Center align image */
+    max-width: 100%; /* Ensure image fits within container */
+    margin: 0 auto; /* Center align image */
   }
 
   .contact-form-container {
-      padding: 20px; /* Reduce padding for form */
+    padding: 20px; /* Reduce padding for form */
   }
 
   .contact-section {
-      padding: 20px; /* Reduce padding for smaller screens */
+    padding: 20px; /* Reduce padding for smaller screens */
   }
 
   h1 {
-      font-size: 30px; /* Adjust heading size for mobile */
+    font-size: 30px; /* Adjust heading size for mobile */
   }
 
   h2 {
-      font-size: 20px; /* Adjust subheading size for mobile */
+    font-size: 20px; /* Adjust subheading size for mobile */
   }
 
   p {
-      font-size: 16px; /* Adjust paragraph size for mobile */
+    font-size: 16px; /* Adjust paragraph size for mobile */
   }
 
   nav ul {
-      flex-direction: column; /* Stack navigation items vertically */
+    flex-direction: column; /* Stack navigation items vertically */
   }
 
   nav ul li {
-      margin: 10px 0; /* Add space between nav items */
+    margin: 10px 0; /* Add space between nav items */
   }
 
   .contact-section .row {
@@ -518,43 +551,43 @@ nav ul li a:hover {
 /* Tablet Styles */
 @media (min-width: 769px) and (max-width: 1024px) {
   .self-pr-container {
-      flex-direction: row; /* Keep text and image side by side */
+    flex-direction: row; /* Keep text and image side by side */
   }
 
   .text-section {
-      width: 60%; /* Adjust width for tablet */
+    width: 60%; /* Adjust width for tablet */
   }
 
   .image-section {
-      width: 40%; /* Adjust width for tablet */
+    width: 40%; /* Adjust width for tablet */
   }
 
   .contact-section {
-      padding: 30px; /* Adjust padding for tablet */
+    padding: 30px; /* Adjust padding for tablet */
   }
 
   h1 {
-      font-size: 35px; /* Adjust heading size for tablet */
+    font-size: 35px; /* Adjust heading size for tablet */
   }
 
   h2 {
-      font-size: 22px; /* Adjust subheading size for tablet */
+    font-size: 22px; /* Adjust subheading size for tablet */
   }
 }
 
 /* Additional styles for contact section */
 .contact-section .row {
-    margin-top: 20px; /* Space between header and form */
+  margin-top: 20px; /* Space between header and form */
 }
 
 .contact-form-container {
-    margin-bottom: 20px; /* Space below the form */
+  margin-bottom: 20px; /* Space below the form */
 }
 
 .contact-image {
-    border-radius: 10px; /* Rounded corners */
-    height: auto; /* Maintain aspect ratio */
-    max-height: 400px; /* Set a maximum height */
-    width: 100%; /* Full width for responsiveness */
-    object-fit: cover; /* Cover the area without distortion */
+  border-radius: 10px; /* Rounded corners */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 400px; /* Set a maximum height */
+  width: 100%; /* Full width for responsiveness */
+  object-fit: cover; /* Cover the area without distortion */
 }
