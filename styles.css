@@ -73,7 +73,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: white; /* Change link color to white */
+  color: #fff; /* Ensure link color is white */
   text-decoration: none; /* Remove underline */
   font-weight: bold; /* Bold links */
   transition: color 0.3s ease; /* Smooth color transition */
