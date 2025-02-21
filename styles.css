@@ -42,7 +42,7 @@ body {
 
 /* Header Styling */
 header {
-  background: rgba(47, 70, 220, 0.9); /* Semi-transparent dark header */
+  background: rgba(0, 0, 0, 0.9); /* Semi-transparent dark header */
   background-image: url("DhakalPrabesh.github.io/abc.avif");
   opacity: 90%; /* Semi-transparent header with image */
   padding: 20px;
@@ -147,7 +147,7 @@ button:hover {
 
 /* Footer Styling */
 footer {
-  background: rgba(4, 121, 150, 0.9); /* Semi-transparent dark footer */
+  background: rgba(39, 37, 41, 0.9); /* Semi-transparent dark footer */
   color: #fff; /* White text */
   text-align: center;
   padding: 20px;
@@ -324,7 +324,7 @@ p{
 }
 
 .contact-header p {
-  font-size: 1.1rem; /* Slightly larger font for readability */
+  font-size: 1.0rem; /* Slightly larger font for readability */
   line-height: 1.6; /* Improved line spacing */
 }
 
