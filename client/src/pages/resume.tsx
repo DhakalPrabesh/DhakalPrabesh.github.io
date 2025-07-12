@@ -10,10 +10,10 @@ export default function Resume() {
   const { language } = useLanguage();
 
   const handleDownload = () => {
-    // Create a link to download the Png
+    // Create a link to download the PDF
     const link = document.createElement("a");
-    link.href = "/CV.png";
-    link.download = "Prabesh_Dhakal_Resume.png";
+    link.href = "/Resume.pdf";
+    link.download = "Prabesh_Dhakal_Resume.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -69,10 +69,10 @@ export default function Resume() {
               </CardHeader>
               <CardContent className="p-8">
                 <div className="flex justify-center items-center">
-                  <img
-                    src="/CV.png"
-                    alt="Resume"
-                    className="max-w-full h-auto shadow-lg rounded-lg"
+                  <embed
+                    src="/Resume.pdf"
+                    type="application/pdf"
+                    className="w-full h-[800px] shadow-lg rounded-lg"
                   />
                 </div>
               </CardContent>
