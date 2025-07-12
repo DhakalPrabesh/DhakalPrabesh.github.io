@@ -12,7 +12,7 @@ export default function Resume() {
   const handleDownload = () => {
     // Create a link to download the PDF
     const link = document.createElement("a");
-    link.href = "/Resume.pdf";
+    link.href = "/resume.pdf";
     link.download = "Prabesh_Dhakal_Resume.pdf";
     document.body.appendChild(link);
     link.click();
